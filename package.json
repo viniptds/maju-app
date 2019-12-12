@@ -4,6 +4,7 @@
   "description": "App for table manager",
   "main": "main.js",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "mongodb": "^3.4.0"
   },
   "devDependencies": {
