@@ -5,17 +5,17 @@ Menu.setApplicationMenu(false);
 function createWindow () {
   // Cria uma janela de navegação.
   let win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1300,
+    height: 800,
     center: true,  
     maximizable: false,
-    //skipTaskbar: true,
     //icon: url-icone.ico,
 
     webPreferences: {
       nodeIntegration: true
     }
   })
+  win.setResizable(false);
   // e carregar o index.html do aplicativo.
   win.loadFile('skin/index.html');
 //   win.once('ready-to-show', () => {
@@ -24,6 +24,3 @@ function createWindow () {
 }
 
 app.on('ready', createWindow)
-
-app.on('browser-window-created', function(e, win){
-})
