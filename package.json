@@ -1,0 +1,30 @@
+{
+  "name": "maju-app",
+  "version": "1.0.0",
+  "description": "App for table manager",
+  "main": "main.js",
+  "dependencies": {
+    "mongodb": "^3.4.0"
+  },
+  "devDependencies": {
+    "electron": "^7.1.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniptds/maju-app.git"
+  },
+  "keywords": [
+    "food",
+    "table-manager",
+    "fast-food"
+  ],
+  "author": "viniptds",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/viniptds/maju-app/issues"
+  },
+  "homepage": "https://github.com/viniptds/maju-app#readme"
+}
