@@ -5,18 +5,18 @@ function createWindow () {
 
   let win = new BrowserWindow({
     width: 1300,
-    height: 800,
+    height: 1000,
     center: true,  
-    maximizable: false,
+    //maximizable: false,
     //icon: url-icone.ico,
 
     webPreferences: {
       nodeIntegration: true
     }
   })
-  win.resizable = false;
+  //win.resizable = false;
   // e carregar o index.html do aplicativo.
-  win.loadFile('skin/index.html');
+  win.loadFile('main.html');
 //   win.once('ready-to-show', () => {
 //     win.show("media/loading.gif");
 //   })
@@ -24,18 +24,4 @@ function createWindow () {
 //Menu.setApplicationMenu(false);
 app.on('ready', createWindow)
 
-//sair da aplicacao
-function close()
-{
-    let ret = confirm("Deseja sair da aplicação?");
-    if(ret)
-    {
-      win.close();
-      win = null;
-    }
-}
 
-function showMenu()
-{
-    
-}

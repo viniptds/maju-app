@@ -1,8 +1,53 @@
+html, body {
+    width: 100%;
+    height: 100%;
+ }
 
 #header
 {
     position: relative;
     width: 100%;
     height: 10%;
-    color: red;
+    background-color: red;
+    color: white;
 }
+
+#menuBox
+{
+    color: white;
+    margin: 10 10 10 10;
+    border: 5 5;
+
+}
+
+/*botoes tela inicial*/
+#btOrder
+{
+    background-color: #3A5FCD;
+}
+
+#btFila
+{
+    background-color: #CDCD00;
+}
+
+#btAccount
+{
+    background-color: #00CD66;
+}
+
+#btMyOrders
+{
+    background-color: ;
+}
+
+#btStats
+{
+    
+}
+
+#btLogout
+{
+    background-color: ;
+}
+
