@@ -1,9 +1,8 @@
 const { app, BrowserWindow, Menu} = require('electron')
 
-Menu.setApplicationMenu(false);
-
+// Cria uma janela de navegação.
 function createWindow () {
-  // Cria uma janela de navegação.
+
   let win = new BrowserWindow({
     width: 1300,
     height: 800,
@@ -15,12 +14,28 @@ function createWindow () {
       nodeIntegration: true
     }
   })
-  win.setResizable(false);
+  win.resizable = false;
   // e carregar o index.html do aplicativo.
   win.loadFile('skin/index.html');
 //   win.once('ready-to-show', () => {
 //     win.show("media/loading.gif");
 //   })
 }
-
+//Menu.setApplicationMenu(false);
 app.on('ready', createWindow)
+
+//sair da aplicacao
+function close()
+{
+    let ret = confirm("Deseja sair da aplicação?");
+    if(ret)
+    {
+      win.close();
+      win = null;
+    }
+}
+
+function showMenu()
+{
+    
+}

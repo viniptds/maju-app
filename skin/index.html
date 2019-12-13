@@ -1,22 +1,19 @@
-<html>
+<!doctype html>
+<html lang="pt-br">
     <head>
         <title>Maju - Menu Principal</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="/style/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="/style/style.css">
-    </head>
+    <head>
     <body>
         <div id="header" class="container-fluid">
-            <button><img src="media/hamburger.ico" alt="Options"></button>
-            <button></button>
+            <div id="menu"><img src="media/hamburger.ico" alt="Options"></div>
+            <div onclick="close()"><img src="media/close.ico" alt="Close"></div>
             <label id="time">
         </div>
         <div id="container">
-            <table id="table">
-                <thead><label>Mesas</label></thead>
-                <tbody>
-                    <script></script>
-                </tbody>
-            </table>
+            <button action="openOrders()">Pedidos</button>
         </div>
+        <script type="text/javascript" src="/js/action.js"></script>
     </body>
 </html>
