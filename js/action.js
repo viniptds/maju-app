@@ -6,6 +6,10 @@ menu.addEventListener("onclick", showMenu);
 const close = document.querySelector("#close");
 close.addEventListener("onclick", close);
 
+const btCloseApp = document.querySelector("#close");
+btCloseApp.addEventListener("onclick", closeApp);
+
+
 const options = {
     type: 'question',
     buttons: ['Cancel', 'OK'],
@@ -27,4 +31,14 @@ function showMenu(e)
     dialog.showMessageBox(null, options, (response) => {
         console.log(response);    
       });
+}
+
+function closeApp()
+{
+  let ret = confirm("Deseja sair da aplicação?");
+    if(ret)
+    {
+      win.close();
+      win = null;
+    }
 }

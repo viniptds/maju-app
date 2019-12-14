@@ -1,8 +1,67 @@
+html, body {
+    width: 100%;
+    height: 100%;
+ }
 
 #header
 {
     position: relative;
     width: 100%;
     height: 10%;
-    color: red;
+    background-color: #8B0000;
+    color: white;
 }
+
+#menuBox
+{
+    color: white;
+    height: 100%;
+}
+
+#menuBox div
+{
+    color: white;
+    border: 5px;
+    border-color: fuchsia;
+    margin: 2% 3% 2% 3%;
+    text-align: center;
+    height: 10%;
+}
+
+#menuBox div:hover
+{
+    font-weight: bold;
+    color: black;
+}
+
+/*botoes tela inicial*/
+#btOrder
+{
+    background-color: #3A5FCD;
+}
+
+#btFila
+{
+    background-color: #CDCD00;
+}
+
+#btAccount
+{
+    background-color: #00CD66;
+}
+
+#btMyOrders
+{
+    background-color: #FF4500;
+}
+
+#btStats
+{
+    background-color: rgb(39, 77, 59);
+}
+
+#btLogout
+{
+    background-color: gray;
+}
+
