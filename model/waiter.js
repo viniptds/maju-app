@@ -14,9 +14,43 @@ class Waiter
         this.perc_tip = perc_tip;
     }
 
-    setPercTip(perc_tip)
+    getId()
     {
-        this.perc_tip = perc_tip;
+        return this.id;
     }
 
+    getName()
+    {
+        return this.name;
+    }
+
+    getPerc_Tip()
+    {
+        return this.perc_tip;
+    }
+
+    setId(id)
+    {
+        if(id != null && id > 0)
+        {
+            this.id = id;
+        }
+    }
+    
+    setName(name)
+    {
+        if(name != null && name.length() > 0)
+        {
+            this.name = name;
+        }
+    }
+
+    setPercTip(perc_tip)
+    {
+        if(perc_tip != null && perc_tip >= 0)
+        {
+            this.perc_tip = perc_tip;
+        }
+    }
+    
 }
