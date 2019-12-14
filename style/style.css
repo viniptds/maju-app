@@ -8,16 +8,30 @@ html, body {
     position: relative;
     width: 100%;
     height: 10%;
-    background-color: red;
+    background-color: #8B0000;
     color: white;
 }
 
 #menuBox
 {
     color: white;
-    margin: 10 10 10 10;
-    border: 5 5;
+    height: 100%;
+}
 
+#menuBox div
+{
+    color: white;
+    border: 5px;
+    border-color: fuchsia;
+    margin: 2% 3% 2% 3%;
+    text-align: center;
+    height: 10%;
+}
+
+#menuBox div:hover
+{
+    font-weight: bold;
+    color: black;
 }
 
 /*botoes tela inicial*/
@@ -38,16 +52,16 @@ html, body {
 
 #btMyOrders
 {
-    background-color: ;
+    background-color: #FF4500;
 }
 
 #btStats
 {
-    
+    background-color: rgb(39, 77, 59);
 }
 
 #btLogout
 {
-    background-color: ;
+    background-color: gray;
 }
 
